@@ -29,6 +29,8 @@ import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
+import backendicon from './backend-icon.png';
+import fronendicon from './frontend-icon.png'
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
@@ -57,6 +59,8 @@ export const assets = {
     figma,
     git,
     javaspring,
+    backendicon,
+    fronendicon,
     react,
     nextjs,
     mysql,
@@ -120,10 +124,20 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-   
-]
+    { 
+        icon: assets.fronendicon, 
+        title: 'Frontend', 
+        description: 'Experienced in building responsive and interactive web interfaces using HTML, CSS, JavaScript, Bootstrap, React, Tailwind, and Next.js.', 
+        link: '' 
+    },
+    { 
+        icon: assets.backendicon, 
+        title: 'Backend', 
+        description: 'Skilled in developing scalable and secure backend systems with Java, Spring Boot, NodeJS, and PHP.', 
+        link: '' 
+    }
+];
+
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Java, PHP' },
