@@ -62,10 +62,10 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
           </button>
-          <a href="#contact" className='hidden lg:flex items-center gap-3 px-10
+          <div  onClick={() => window.open("https://github.com/Lochoang21", "_blank")}  className='cursor-pointer hidden lg:flex items-center gap-3 px-10
                                         py-3 border border-gray-500 rounded-full ml-4 font-Ovo
                                          dark:border-white/50 dark:bg-transparent '>
-          Contact <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='logo-contact' className='w-3' /></a>
+          Github <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='logo-contact' className='w-3' /></div>
 
           <button className='block md:hidden' onClick={openMenu}>
             <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-6' />
