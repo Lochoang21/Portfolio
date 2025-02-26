@@ -30,13 +30,18 @@ import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import backendicon from './backend-icon.png';
-import fronendicon from './frontend-icon.png'
+import fronendicon from './frontend-icon.png';
+import html from './html.png';
+import css from './css.png';
+import js from './js.png';
+import php from './php.png';
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
+import docker from './docker.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
@@ -61,7 +66,12 @@ export const assets = {
     javaspring,
     backendicon,
     fronendicon,
+    docker,
     react,
+    html,
+    css,
+    js,
+    php,
     nextjs,
     mysql,
     bootstrap,
@@ -99,27 +109,35 @@ export const assets = {
 export const workData = [
     {
         title: 'Clothing store',
-        description: 'Web Design',
+        description: 'Website',
         bgImage: '/closthing_store.png',
         link: 'https://github.com/Lochoang21/Web2.git',
+        tech: 'HTML, CSS, JavaScript, PHP, MySQL',
+       icon: [assets.html, assets.css, assets.js, assets.php, assets.mysql],
     },
     {
         title: 'Moment Website',
-        description: 'Web & App',
+        description: 'Website',
         bgImage: '/moment.jpg',
         link: 'https://github.com/Lochoang21/moment-FE.git',
+        tech: 'Java (Spring Boot RESTful API), Next.js, Bootstrap, Docker, VSP, Vercel',
+        icon: [assets.javaspring, assets.nextjs, assets.bootstrap, assets.docker, assets.mysql],
     },
     {
         title: 'Compute Store',
         description: 'Website',
         bgImage: '/computer_store.jpg',
         link: 'https://github.com/Lochoang21/java-spring-mvc.git',
+        tech:'Java (Spring MVC, JPA, Hibernate), JSP, Spring Security, Spring Session, MySQL',
+        icon: [assets.javaspring, assets.html, assets.css, assets.js, assets.mysql],
     },
     {
         title: 'Tour Reservation',
-        description: 'Trave Website',
+        description: 'Travel Website',
         bgImage: '/tour_reservation.png',
         link: 'https://github.com/Lochoang21/tour_reservation.git',
+        tech: 'Java (Spring Boot, JPA, Hibernate), JSP, Spring Security, Google & Facebook Login, VnPay, MySQL',
+        icon: [assets.javaspring, assets.html, assets.css, assets.js, assets.mysql],
     },
 ]
 

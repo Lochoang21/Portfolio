@@ -34,33 +34,52 @@ const Project: React.FC<ProjectProps> = ({ isDarkMode }) => {
             </motion.p>
 
             <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1}}
-            transition={{ duration: 0.6, delay: 0.9 }}
-            className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
-                {workData.map((project, index) => (
-                    <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                    key={index} className='aspect-square bg-no-repeat bg-cover  bg-center rounded-lg
-                                                relative cursor-pointer group'
-                        style={{ backgroundImage: `url(${project.bgImage})` }}>
-                        <div className='border rounded-full border-black bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 
-                                        py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7'>
-                            <div>
-                                <h2 className='font-semibold'>{project.title}</h2>
-                                <p className='text-sm text-gray-700'>{project.description}</p>
-                            </div>
-                            <div onClick={() => window.open(project.link, "_blank")} 
-                             className='border rounded-full border-black w-9 aspect-square flex justify-center items-center
-                                            shadow-[2px_2px_0px_#000] group-hover:bg-pink-400 transition'>   
-                                <Image src={assets.send_icon} alt='send-icon' className='w-5' />
-                            </div>
-                        </div>
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.6, delay: 0.9 }}
+    className="grid grid-cols-auto my-10 gap-5 dark:text-black"
+>
+    {workData.map((project, index) => (
+        <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            key={index}
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg
+                        relative cursor-pointer group"
+            style={{ backgroundImage: `url(${project.bgImage})` }}
+        >
+            {/* Thông tin dự án */}
+            <div
+                className="border rounded-full border-black bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
+                            transform -translate-x-1/2 py-3 px-5 flex flex-col justify-between items-center 
+                            duration-500 group-hover:bottom-7"
+            >
+                {/* Tiêu đề & mô tả */}
+                <div className="text-center">
+                    <h2 className="font-semibold">{project.title}</h2>
+                    <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
 
-                    </motion.div>
-                ))}
-            </motion.div>
+                {/* Công nghệ sử dụng */}
+                <div className="flex flex-wrap justify-center gap-2 mt-2">
+                    {project.icon.map((icon, idx) => (
+                        <Image key={idx} src={icon} alt="tech-icon" className="w-6 h-6" />
+                    ))}
+                </div>
+
+                {/* Nút mở GitHub */}
+                <div
+                    onClick={() => window.open(project.link, "_blank")}
+                    className="border rounded-full border-black w-9 aspect-square flex justify-center items-center
+                               shadow-[2px_2px_0px_#000] group-hover:bg-pink-400 transition mt-2"
+                >
+                    <Image src={assets.send_icon} alt="send-icon" className="w-5" />
+                </div>
+            </div>
+        </motion.div>
+    ))}
+</motion.div>
+
             <div>
                 <motion.a 
                 initial={{ opacity: 0 }}
