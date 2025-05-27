@@ -26,7 +26,6 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className='text-center mb-2 text-5xl font-Ovo'>About me</motion.h2>
 
-
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -69,51 +68,106 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
                             </motion.li>
                         ))}
                     </motion.ul>
-                    <motion.h4
-                        initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 1.3 }}
-                        className='my-2 text-gray-700 font-Ovo dark:text-white/80'>
-                        Tool I use</motion.h4>
-                    <motion.ul
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.6, delay: 1.5 }}
-                        className='flex items-center gap-2 sm:gap-4'>
-                        {toolsData.map((tool, index) => (
-                            <motion.li
 
-                                whileHover={{ scale: 1.1 }}
-
-                                className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500' key={index}>
-                                <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
-                            </motion.li>
-                        ))}
-                    </motion.ul>
-
-
-                    <motion.h4
-                        initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 1.3 }}
-                        className='my-2 text-gray-700 font-Ovo dark:text-white/80'>
-                        Tech Stack</motion.h4>
-                    <motion.ul
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.6, delay: 1.5 }}
-                        className='flex items-center gap-2 sm:gap-4'>
-                        {techData.map((tool, index) => (
-                            <motion.li
-                                whileHover={{ scale: 1.1 }}
-
-                                className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500' key={index}>
-                                <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
-                            </motion.li>
-                        ))}
-                    </motion.ul>
+                    
                 </motion.div>
             </motion.div>
+            {/* Tools Section - Redesigned */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 1.2 }}
+                        className='mt-12 mb-8'>
+                        <div className='flex items-center gap-3 mb-6'>
+                            <div className='w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full'></div>
+                            <h4 className='text-xl font-semibold text-gray-800 dark:text-white font-Ovo'>
+                                Development Tools
+                            </h4>
+                        </div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.8, delay: 1.4 }}
+                            className='bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 w-fit'>
+                            <div className='flex items-center gap-4'>
+                                {toolsData.map((tool, index) => (
+                                    <motion.div
+                                        key={index}
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        transition={{ duration: 0.4, delay: 1.5 + index * 0.1 }}
+                                        whileHover={{ 
+                                            scale: 1.15, 
+                                            rotate: 5,
+                                            transition: { duration: 0.2 }
+                                        }}
+                                        className='group relative'>
+                                        <div className='flex items-center justify-center w-16 h-16 bg-white dark:bg-gray-700 
+                                                      rounded-2xl shadow-lg hover:shadow-xl cursor-pointer 
+                                                      border border-gray-200 dark:border-gray-600
+                                                      transition-all duration-300 group-hover:border-blue-400 dark:group-hover:border-blue-500'>
+                                            <Image src={tool} alt='Tool' className='w-12 h-12 object-contain rounded-xl' />
+                                        </div>
+                                        {/* Tooltip effect */}
+                                        <div className='absolute -top-10 left-1/2 transform -translate-x-1/2 
+                                                      bg-gray-800 text-white text-xs px-2 py-1 rounded-md 
+                                                      opacity-0 group-hover:opacity-100 transition-opacity duration-200
+                                                      whitespace-nowrap z-10'>
+                                            Tool #{index + 1}
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </motion.div>
+
+                    {/* Tech Stack Section - Redesigned */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 1.3 }}
+                        className='mb-8'>
+                        <div className='flex items-center gap-3 mb-6'>
+                            <div className='w-1 h-6 bg-gradient-to-b from-green-500 to-teal-600 rounded-full'></div>
+                            <h4 className='text-xl font-semibold text-gray-800 dark:text-white font-Ovo'>
+                                Technology Stack
+                            </h4>
+                        </div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.8, delay: 1.5 }}
+                            className='bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50 
+                                     rounded-2xl p-6 border border-gray-200 dark:border-gray-700 w-fit'>
+                            <div className='flex items-center gap-4'>
+                                {techData.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: 1.6 + index * 0.08 }}
+                                        whileHover={{ 
+                                            scale: 1.2, 
+                                            y: -8,
+                                            transition: { duration: 0.2 }
+                                        }}
+                                        className='group relative'>
+                                        <div className='flex items-center justify-center w-16 h-16 
+                                                      bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-2xl 
+                                                      cursor-pointer border border-gray-200 dark:border-gray-600
+                                                      transition-all duration-300 group-hover:border-green-400 dark:group-hover:border-green-500
+                                                      group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-green-50
+                                                      dark:group-hover:from-gray-700 dark:group-hover:to-green-900/20'>
+                                            <Image src={tech} alt='Technology' className='w-12 h-12 object-contain' />
+                                        </div>
+                                        {/* Glow effect */}
+                                        <div className='absolute inset-0 rounded-xl bg-gradient-to-r from-green-400/20 to-teal-400/20 
+                                                      opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm'></div>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </motion.div>
         </motion.div>
     )
 }

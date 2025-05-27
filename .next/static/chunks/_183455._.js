@@ -949,7 +949,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/js.979cc430.png");}}),
+__turbopack_export_value__("/_next/static/media/js.e156843d.png");}}),
 "[project]/assets/js.png.mjs { IMAGE => \"[project]/assets/js.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -962,11 +962,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$js$2e$png__$5b$app
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$js$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
-    width: 298,
-    height: 169,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAn0lEQVR42k3KsQqCQByA8etUqLSWeoZqc6nGiJokGn2LXqBGCVxuiYIIbjgcoiWLoCWQdolo6AGOSBCfQKe/3qD4jT8+hLI0VW7s153L8zTg7/uEM6JfNVVqorxaVaoz0vX4awFJSOHGDE9YMSgyVnZWz/19VpBER3C2s7OwYsC4gu3lkP6/NsQBgY01osJQOWPcMt2D7j+cvj+fts3cU3gAMIeI9QCJAAAAAElFTkSuQmCC",
-    blurWidth: 8,
-    blurHeight: 5
+    width: 216,
+    height: 234,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAA80lEQVR42gHoABf/AAYGBmoFBQVhBQUFZgYGBnYFBQVbBwcHagYGBnIAGRYHNFhNFnxdURiFX1MYh2BUGIFaTheCGBUHNAAvKQs1xqwv6te8PP7WvD/rwKYwxMOoMNAsJgsyACQfCSi/pi3i28Ze/6ydV7h2ZR9zqpMqtCAcCCUAGRYGHbaeK9fbxmD/rJ1ZtmxdHWidiCeoFxQGGQARDwQTrptAyuDSjP/NumLZcmMebYFwIIwPDQQQAAoJAwugjjS63stz/8y1TdqpkiuomIQlpggHAgkAAwMBA1NJFGCokyjF1Lgz7rObLMNTSBRdAgIBA7NpUUomCBC+AAAAAElFTkSuQmCC",
+    blurWidth: 7,
+    blurHeight: 8
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
@@ -1786,12 +1786,12 @@ const About = ({ isDarkMode })=>{
                             className: "w-full rounded-3xl"
                         }, void 0, false, {
                             fileName: "[project]/app/components/About.tsx",
-                            lineNumber: 40,
+                            lineNumber: 39,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/About.tsx",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1812,7 +1812,7 @@ const About = ({ isDarkMode })=>{
                                 children: "I am student at the Sai Gon University of Information Technology, majoring in Software Engineering. I am passionate about web development and have experience in backend development. I am a person who is always eager to learn new things and improve myself. I am also a person who is always ready to help others and share my knowledge with them."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ul, {
@@ -1839,7 +1839,7 @@ const About = ({ isDarkMode })=>{
                                                 className: "w-7 mt-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/About.tsx",
-                                                lineNumber: 66,
+                                                lineNumber: 65,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1847,7 +1847,7 @@ const About = ({ isDarkMode })=>{
                                                 children: title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/About.tsx",
-                                                lineNumber: 67,
+                                                lineNumber: 66,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1855,143 +1855,275 @@ const About = ({ isDarkMode })=>{
                                                 children: description
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/About.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 67,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/app/components/About.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 60,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 55,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h4, {
-                                initial: {
-                                    y: 20,
-                                    opacity: 0
-                                },
-                                whileInView: {
-                                    y: 0,
-                                    opacity: 1
-                                },
-                                transition: {
-                                    duration: 0.5,
-                                    delay: 1.3
-                                },
-                                className: "my-2 text-gray-700 font-Ovo dark:text-white/80",
-                                children: "Tool I use"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 72,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ul, {
-                                initial: {
-                                    opacity: 0
-                                },
-                                whileInView: {
-                                    opacity: 1
-                                },
-                                transition: {
-                                    duration: 0.6,
-                                    delay: 1.5
-                                },
-                                className: "flex items-center gap-2 sm:gap-4",
-                                children: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toolsData"].map((tool, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].li, {
-                                        whileHover: {
-                                            scale: 1.1
-                                        },
-                                        className: "flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: tool,
-                                            alt: "Tool",
-                                            className: "w-5 sm:w-7"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 33
-                                        }, this)
-                                    }, index, false, {
-                                        fileName: "[project]/app/components/About.tsx",
-                                        lineNumber: 84,
-                                        columnNumber: 29
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 78,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h4, {
-                                initial: {
-                                    y: 20,
-                                    opacity: 0
-                                },
-                                whileInView: {
-                                    y: 0,
-                                    opacity: 1
-                                },
-                                transition: {
-                                    duration: 0.5,
-                                    delay: 1.3
-                                },
-                                className: "my-2 text-gray-700 font-Ovo dark:text-white/80",
-                                children: "Tech Stack"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 95,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ul, {
-                                initial: {
-                                    opacity: 0
-                                },
-                                whileInView: {
-                                    opacity: 1
-                                },
-                                transition: {
-                                    duration: 0.6,
-                                    delay: 1.5
-                                },
-                                className: "flex items-center gap-2 sm:gap-4",
-                                children: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["techData"].map((tool, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].li, {
-                                        whileHover: {
-                                            scale: 1.1
-                                        },
-                                        className: "flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: tool,
-                                            alt: "Tool",
-                                            className: "w-5 sm:w-7"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 111,
-                                            columnNumber: 33
-                                        }, this)
-                                    }, index, false, {
-                                        fileName: "[project]/app/components/About.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 29
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 101,
+                                lineNumber: 54,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/About.tsx",
-                        lineNumber: 42,
+                        lineNumber: 41,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/About.tsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 20
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: 0.6,
+                    delay: 1.2
+                },
+                className: "mt-12 mb-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-3 mb-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/About.tsx",
+                                lineNumber: 82,
+                                columnNumber: 29
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-xl font-semibold text-gray-800 dark:text-white font-Ovo",
+                                children: "Development Tools"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/About.tsx",
+                                lineNumber: 83,
+                                columnNumber: 29
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/About.tsx",
+                        lineNumber: 81,
+                        columnNumber: 25
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0
+                        },
+                        whileInView: {
+                            opacity: 1
+                        },
+                        transition: {
+                            duration: 0.8,
+                            delay: 1.4
+                        },
+                        className: "bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 w-fit",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-4",
+                            children: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toolsData"].map((tool, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0,
+                                        scale: 0.8
+                                    },
+                                    whileInView: {
+                                        opacity: 1,
+                                        scale: 1
+                                    },
+                                    transition: {
+                                        duration: 0.4,
+                                        delay: 1.5 + index * 0.1
+                                    },
+                                    whileHover: {
+                                        scale: 1.15,
+                                        rotate: 5,
+                                        transition: {
+                                            duration: 0.2
+                                        }
+                                    },
+                                    className: "group relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-center w-16 h-16 bg-white dark:bg-gray-700  rounded-2xl shadow-lg hover:shadow-xl cursor-pointer  border border-gray-200 dark:border-gray-600 transition-all duration-300 group-hover:border-blue-400 dark:group-hover:border-blue-500",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: tool,
+                                                alt: "Tool",
+                                                className: "w-12 h-12 object-contain rounded-xl"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/components/About.tsx",
+                                                lineNumber: 109,
+                                                columnNumber: 45
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/About.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 41
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute -top-10 left-1/2 transform -translate-x-1/2  bg-gray-800 text-white text-xs px-2 py-1 rounded-md  opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10",
+                                            children: [
+                                                "Tool #",
+                                                index + 1
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/components/About.tsx",
+                                            lineNumber: 112,
+                                            columnNumber: 41
+                                        }, this)
+                                    ]
+                                }, index, true, {
+                                    fileName: "[project]/app/components/About.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 37
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/About.tsx",
+                            lineNumber: 92,
+                            columnNumber: 29
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/About.tsx",
+                        lineNumber: 87,
+                        columnNumber: 25
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/About.tsx",
+                lineNumber: 76,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 20
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: 0.6,
+                    delay: 1.3
+                },
+                className: "mb-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-3 mb-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-1 h-6 bg-gradient-to-b from-green-500 to-teal-600 rounded-full"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/About.tsx",
+                                lineNumber: 131,
+                                columnNumber: 29
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-xl font-semibold text-gray-800 dark:text-white font-Ovo",
+                                children: "Technology Stack"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/About.tsx",
+                                lineNumber: 132,
+                                columnNumber: 29
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/About.tsx",
+                        lineNumber: 130,
+                        columnNumber: 25
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0
+                        },
+                        whileInView: {
+                            opacity: 1
+                        },
+                        transition: {
+                            duration: 0.8,
+                            delay: 1.5
+                        },
+                        className: "bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50  rounded-2xl p-6 border border-gray-200 dark:border-gray-700 w-fit",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-4",
+                            children: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["techData"].map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0,
+                                        y: 20
+                                    },
+                                    whileInView: {
+                                        opacity: 1,
+                                        y: 0
+                                    },
+                                    transition: {
+                                        duration: 0.4,
+                                        delay: 1.6 + index * 0.08
+                                    },
+                                    whileHover: {
+                                        scale: 1.2,
+                                        y: -8,
+                                        transition: {
+                                            duration: 0.2
+                                        }
+                                    },
+                                    className: "group relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-center w-16 h-16  bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-2xl  cursor-pointer border border-gray-200 dark:border-gray-600 transition-all duration-300 group-hover:border-green-400 dark:group-hover:border-green-500 group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-green-50 dark:group-hover:from-gray-700 dark:group-hover:to-green-900/20",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: tech,
+                                                alt: "Technology",
+                                                className: "w-12 h-12 object-contain"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/components/About.tsx",
+                                                lineNumber: 161,
+                                                columnNumber: 45
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/About.tsx",
+                                            lineNumber: 155,
+                                            columnNumber: 41
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 rounded-xl bg-gradient-to-r from-green-400/20 to-teal-400/20  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/About.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 41
+                                        }, this)
+                                    ]
+                                }, index, true, {
+                                    fileName: "[project]/app/components/About.tsx",
+                                    lineNumber: 144,
+                                    columnNumber: 37
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/About.tsx",
+                            lineNumber: 142,
+                            columnNumber: 29
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/About.tsx",
+                        lineNumber: 136,
+                        columnNumber: 25
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/About.tsx",
+                lineNumber: 125,
+                columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
@@ -3161,6 +3293,7 @@ const Project = ({ isDarkMode })=>{
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                onClick: ()=>window.open("https://github.com/Lochoang21?tab=repositories", "_blank"),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
                     initial: {
                         opacity: 0
@@ -3172,18 +3305,17 @@ const Project = ({ isDarkMode })=>{
                         duration: 0.5,
                         delay: 1.1
                     },
-                    href: "",
                     className: "w-max flex items-center justify-center gap-2 text-gray-700  border-[0.5px] border-gray-700 rounded-full px-10 py-2 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover",
                     children: [
-                        "Show more ",
+                        "Show more",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: isDarkMode ? __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["assets"].right_arrow_bold_dark : __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["assets"].right_arrow_bold,
                             className: "w-4",
                             alt: "show more"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Project.tsx",
-                            lineNumber: 91,
-                            columnNumber: 31
+                            lineNumber: 92,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {

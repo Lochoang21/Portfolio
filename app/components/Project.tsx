@@ -80,15 +80,16 @@ const Project: React.FC<ProjectProps> = ({ isDarkMode }) => {
     ))}
 </motion.div>
 
-            <div>
+            <div  onClick={() => window.open("https://github.com/Lochoang21?tab=repositories", "_blank")}>
                 <motion.a 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1}}
                 transition={{ duration: 0.5, delay: 1.1}}
-                href="" className='w-max flex items-center justify-center gap-2 text-gray-700 
+                className='w-max flex items-center justify-center gap-2 text-gray-700 
                 border-[0.5px] border-gray-700 rounded-full px-10 py-2 mx-auto my-20
                 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
-                    Show more <Image src={ isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} className='w-4' alt='show more'/>
+                    Show more 
+                    <Image src={ isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} className='w-4' alt='show more'/>
                 </motion.a>
             </div>
         </motion.div>
