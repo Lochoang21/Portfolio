@@ -33,6 +33,7 @@ import backendicon from './backend-icon.png';
 import fronendicon from './frontend-icon.png';
 import html from './html.png';
 import css from './css.png';
+import myImage from './my-image.webp'
 import js from './js.png';
 import php from './php.png';
 import arrow_icon from './arrow-icon.png';
@@ -61,6 +62,7 @@ export const assets = {
     project_icon_dark,
     vscode,
     firebase,
+    myImage,
     figma,
     git,
     javaspring,
@@ -113,7 +115,7 @@ export const workData = [
         bgImage: '/closthing_store.png',
         link: 'https://github.com/Lochoang21/Web2.git',
         tech: 'HTML, CSS, JavaScript, PHP, MySQL',
-       icon: [assets.html, assets.css, assets.js, assets.php, assets.mysql],
+        icon: [assets.html, assets.css, assets.js, assets.php, assets.mysql],
     },
     {
         title: 'Moment Website',
@@ -128,7 +130,7 @@ export const workData = [
         description: 'Website',
         bgImage: '/computer_store.jpg',
         link: 'https://github.com/Lochoang21/java-spring-mvc.git',
-        tech:'Java (Spring MVC, JPA, Hibernate), JSP, Spring Security, Spring Session, MySQL',
+        tech: 'Java (Spring MVC, JPA, Hibernate), JSP, Spring Security, Spring Session, MySQL',
         icon: [assets.javaspring, assets.html, assets.css, assets.js, assets.mysql],
     },
     {
@@ -142,17 +144,17 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { 
-        icon: assets.fronendicon, 
-        title: 'Frontend', 
-        description: 'Experienced in building responsive and interactive web interfaces using HTML, CSS, JavaScript, Bootstrap, React, Tailwind, and Next.js.', 
-        link: '' 
+    {
+        icon: assets.fronendicon,
+        title: 'Frontend',
+        description: 'Experienced in building responsive and interactive web interfaces using HTML, CSS, JavaScript, Bootstrap, React, Tailwind, and Next.js.',
+        link: ''
     },
-    { 
-        icon: assets.backendicon, 
-        title: 'Backend', 
-        description: 'Skilled in developing scalable and secure backend systems with Java, Spring Boot, NodeJS, and PHP.', 
-        link: '' 
+    {
+        icon: assets.backendicon,
+        title: 'Backend',
+        description: 'Skilled in developing scalable and secure backend systems with Java, Spring Boot, NodeJS, and PHP.',
+        link: ''
     }
 ];
 
@@ -168,5 +170,10 @@ export const toolsData = [
 ];
 
 export const techData = [
-    assets.javaspring, assets.mysql, assets.react, assets.nextjs, assets.bootstrap, assets.github
+    { icon: assets.javaspring, level: 5, name: "Java Spring Boot" },
+    { icon: assets.mysql, level: 4, name: "MySQL" },
+    { icon: assets.react, level: 4, name: "React" },
+    { icon: assets.nextjs, level: 4, name: "Next.js" },
+    { icon: assets.bootstrap, level: 4, name: "Bootstrap" },
+    { icon: assets.github, level: 4, name: "GitHub" }
 ];
