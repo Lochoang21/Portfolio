@@ -56,6 +56,10 @@ import profileImage from './profile-img.jpg';
 import postgressql from './Postgresql_elephant.svg';
 import tailwind from './tailwind.png';
 import strapi from './strapi.png';
+import j2k from './y2k.jpg';
+import ts from './ts.png';
+import socketio from './socketio.svg';
+import nestjs from './nestjs.svg';
 
 export const assets = {
     user_image,
@@ -63,6 +67,10 @@ export const assets = {
     code_icon_dark,
     strapi,
     edu_icon,
+    j2k,
+    ts,
+    socketio,
+    nestjs,
     edu_icon_dark,
     project_icon,
     project_icon_dark,
@@ -119,6 +127,22 @@ export const assets = {
 };
 
 export const workData = [
+    {
+        title: 'EduHub',
+        description: 'Course Introduction Website',
+        bgImage: '/eduhub.png',
+        link: 'https://eduhubvn.com/',
+        tech: 'Next.js, Tailwind, JavaScript, Strapi, Java (Spring Boot RESTful API)',
+        icon: [assets.nextjs, assets.tailwind, assets.js, assets.strapi, assets.javaspring],
+    },
+    {
+        title: 'Social Network',
+        description: 'Social Network Real-Time Chat',
+        bgImage: '/social.webp',
+        link: 'https://github.com/Lochoang21/NestJS_RN',
+        tech: 'React.js, Tailwind, TypeScript, Socket.io, NestJS',
+        icon: [assets.react, assets.tailwind, assets.ts, assets.socketio, assets.nestjs],
+    },
     {
         title: 'Clothing store',
         description: 'E-Commerce Website',

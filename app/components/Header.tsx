@@ -11,7 +11,7 @@ const Header = () => {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
             >
-                <Image src={assets.profile_img} alt='' className=' w-36 h-62 rounded-xl' />
+                <Image src={assets.profile_img} alt='' className=' w-36 h-62 rounded-[30px]' />
             </motion.div>
 
             {/* Greeting — DM Sans, nhẹ như nav links */}

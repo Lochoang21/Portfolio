@@ -30,75 +30,112 @@ const Contact = () => {
       setResult(data.message);
     }
   };
+
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-    id='contact'
-      className="w-full px-[12%] py-10 scroll-mt-20 
-                bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] 
-                dark:bg-none">
-      <motion.h4
-       initial={{ opacity: 0, y: -20 }}
-       whileInView={{ opacity: 1, y: 0 }}
-       transition={{ duration: 0.5, delay: 0.3 }}
-      className='text-center mb-2 text-lg font-Ovo'>Connect with me</motion.h4>
-      <motion.h2
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.5 }}
-      className='text-center text-5xl font-Ovo'>Get in touch</motion.h2>
-      <motion.p
-      initial={{ opacity: 0}}
-      whileInView={{ opacity: 1}}
-      transition={{ duration: 0.5, delay: 0.7 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I would love to hear from you. Whether you have a question or just want to say hi, feel free to send me a message.
-      </motion.p>
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id='contact'
+      className='w-full px-[12%] py-16 scroll-mt-20'
+    >
 
-      <motion.form
-      initial={{ opacity: 0}}
-      whileInView={{ opacity: 1}}
-      transition={{ duration: 0.5, delay: 0.9 }}
-      onSubmit={onSubmit} action="" className='max-w-2xl mx-auto'>
-        <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+      <div className='flex flex-col lg:flex-row gap-10 items-start'>
+        {/* Left: Heading */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className='lg:w-64 flex-shrink-0'
+        >
+          <h2 className='text-4xl font-bold text-[#111827] dark:text-white leading-tight tracking-tight mb-4'>
+            Get In<br />
+            <span className='text-[#9ca3af]'>Touch</span>
+          </h2>
+          <p className='text-sm text-[#9ca3af] leading-relaxed mb-6'>
+            I would love to hear from you. Send a message and I will get back to you soon.
+          </p>
+        </motion.div>
 
-          <motion.input
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{x:0, opacity: 1}}
-          transition={{ duration: 0.6, delay: 1.1 }}
-          type="text" placeholder='Enter your name' required name='name'
-            className='flex-1 p-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
-                        dark:bg-darkHover/30 dark:border-white/90' />
+        {/* Right: Contact form */}
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          onSubmit={onSubmit}
+          className='flex-1 w-full rounded-2xl p-6 sm:p-8
+                     bg-white dark:bg-[#111827]
+                     border border-[#d1d5db] dark:border-[#1f2937]
+                     shadow-xl shadow-[#111827]/[0.04] dark:shadow-black/20'
+        >
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4'>
+            <motion.input
+              initial={{ x: -30, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.45, delay: 0.4 }}
+              type='text'
+              placeholder='Enter your name'
+              required
+              name='name'
+              className='w-full px-4 py-3 rounded-xl outline-none
+                         bg-[#f9fafb] dark:bg-[#1f2937]
+                         border border-[#d1d5db] dark:border-[#374151]
+                         text-[#111827] dark:text-white placeholder:text-[#9ca3af]
+                         focus:border-[#111827] dark:focus:border-[#d1d5db] transition-colors'
+            />
 
-          <motion.input
-           initial={{ x: 50, opacity: 0 }}
-           whileInView={{x:0, opacity: 1}}
-           transition={{ duration: 0.6, delay: 1.1 }}
-          type="email" placeholder='Enter your email' required name='email'
-            className='flex-1 p-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
-                        dark:bg-darkHover/30 dark:border-white/90' />
+            <motion.input
+              initial={{ x: 30, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.45, delay: 0.4 }}
+              type='email'
+              placeholder='Enter your email'
+              required
+              name='email'
+              className='w-full px-4 py-3 rounded-xl outline-none
+                         bg-[#f9fafb] dark:bg-[#1f2937]
+                         border border-[#d1d5db] dark:border-[#374151]
+                         text-[#111827] dark:text-white placeholder:text-[#9ca3af]
+                         focus:border-[#111827] dark:focus:border-[#d1d5db] transition-colors'
+            />
+          </div>
 
-        </div>
-        <motion.textarea 
-         initial={{ y: 100, opacity: 0 }}
-         whileInView={{y:0, opacity: 1}}
-         transition={{ duration: 0.6, delay: 1.1 }}
-        id="" rows={6} placeholder='Enter your message' required name='message'
-          className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' ></motion.textarea>
-        
-        <motion.button
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-        type="submit" className='py-3 px-8 w-max flex items-center justify-between gap-2
-                bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'>
-          Submit now <Image src={assets.right_arrow_white} alt='' className='w-4' /></motion.button>
+          <motion.textarea
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.45, delay: 0.45 }}
+            rows={6}
+            placeholder='Enter your message'
+            required
+            name='message'
+            className='w-full px-4 py-3 rounded-xl outline-none mb-5
+                       bg-[#f9fafb] dark:bg-[#1f2937]
+                       border border-[#d1d5db] dark:border-[#374151]
+                       text-[#111827] dark:text-white placeholder:text-[#9ca3af]
+                       focus:border-[#111827] dark:focus:border-[#d1d5db] transition-colors'
+          />
 
-        <p className='mt-4'>
-          {result}
-        </p>
-      </motion.form>
+          <div className='flex items-center justify-between gap-4 flex-wrap'>
+            <motion.button
+              whileHover={{ y: -2 }}
+              transition={{ duration: 0.2 }}
+              type='submit'
+              className='inline-flex items-center gap-2
+                         border border-[#d1d5db] dark:border-[#374151]
+                         hover:border-[#111827] dark:hover:border-[#d1d5db]
+                         bg-[#111827] hover:bg-black
+                         text-white text-xs font-semibold px-5 py-3 rounded-xl
+                         transition-all duration-300 whitespace-nowrap'
+            >
+              Submit now <Image src={assets.right_arrow_white} alt='arrow right' className='w-4' />
+            </motion.button>
+
+            <p className='text-xs font-medium text-[#6b7280] dark:text-[#9ca3af]'>
+              {result}
+            </p>
+          </div>
+        </motion.form>
+      </div>
     </motion.div>
   )
 }

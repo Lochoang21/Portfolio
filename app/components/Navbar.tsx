@@ -42,6 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, setIsDarkMode }) => {
   const navItems = [
     { label: 'Home', href: '#top' },
     { label: 'About Me', href: '#about' },
+    { label: 'Experience', href: '#experience' },
     { label: 'Services', href: '#services' },
     { label: 'Projects', href: '#project' },
     { label: 'Contact', href: '#contact' },
