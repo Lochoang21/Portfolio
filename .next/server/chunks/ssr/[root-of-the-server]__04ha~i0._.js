@@ -1,0 +1,4 @@
+module.exports=[116,a=>{a.v({className:"outfit_3c67e985-module__tu65Uq__className"})},20965,a=>{a.v({className:"ovo_4eb94015-module__6_8SWq__className"})},33290,a=>{"use strict";var b=a.i(7997),c=a.i(116);let d={className:c.default.className,style:{fontFamily:"'Outfit', 'Outfit Fallback'",fontStyle:"normal"}};null!=c.default.variable&&(d.variable=c.default.variable);var e=a.i(20965);let f={className:e.default.className,style:{fontFamily:"'Ovo', 'Ovo Fallback'",fontWeight:400,fontStyle:"normal"}};null!=e.default.variable&&(f.variable=e.default.variable),a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"en",className:"scroll-smooth",children:(0,b.jsx)("body",{className:`${d.className} ${f.className} antialiased leading-8
+        overflow-x-hidden dark:bg-darkTheme dark:text-white`,children:a})})},"metadata",0,{title:"Portfolio",description:""}],33290)},70864,a=>{a.n(a.i(33290))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__04ha~i0._.js.map

@@ -1,1 +1,15 @@
-{"pages":{},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/1b99372b3eaef0c8-s.p.0gx2haw2tmll8.woff2",
+      "static/media/4f8b141162124378-s.p.0xycvu3p-o6oe.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/1b99372b3eaef0c8-s.p.0gx2haw2tmll8.woff2",
+      "static/media/4f8b141162124378-s.p.0xycvu3p-o6oe.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
