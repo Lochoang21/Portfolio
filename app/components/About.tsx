@@ -13,142 +13,156 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            id='about' className='w-full px-[12%] py-10 scroll-mt-20 '>
+            id='about'
+            className='w-full px-[12%] scroll-mt-20'
+        >
+            {/* ── Section heading ── */}
             <motion.h4
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className='text-center mb-2 text-lg font-Ovo'>Introduction</motion.h4>
+                className='text-center mb-2 text-lg font-sans font-normal tracking-[0.01em] text-[#555] dark:text-[#aaa]'
+            >
+                Introduction
+            </motion.h4>
 
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className='text-center mb-2 text-5xl font-Ovo'>About me</motion.h2>
+                className="text-center mb-2 text-5xl font-semibold tracking-[-0.01em] text-[#111] dark:text-[#f5f5f5]"
+            >
+                About me
+            </motion.h2>
 
+            {/* ── Profile + Bio ── */}
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+                className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'
+            >
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
-                    className='w-64 sm:w-80 rounded-3xl max-w-none'>
+                    className='w-64 sm:w-80 rounded-3xl max-w-none'
+                >
                     <Image src={assets.myImage} alt='user' className='w-full rounded-3xl' />
                 </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
-                    className=' '>
-
-                    <p className=' mb-10 max-w-2xl font-Ovo'>
-                        I am student at the Sai Gon University of Information Technology,
-                        majoring in Software Engineering.
-                        I am passionate about web development and have experience in backend development.
-                        I am a person who is always eager to learn new things and improve myself.
-                        I am also a person who is always ready to help others and share my knowledge with them.
+                >
+                    <p className='mb-10 max-w-2xl font-sans font-normal text-sm leading-relaxed tracking-[0.01em] text-[#555] dark:text-[#aaa]'>
+                        A motivated Software Engineering graduate with over 6 months of hands-on experience
+                        in fullstack web development. Experienced in building web applications using Java
+                        Spring Boot and ReactJS, with a solid foundation in MySQL and PostgreSQL. Eager to
+                        apply my technical and problem-solving skills to develop effective web solutions and
+                        grow within a professional team.
                     </p>
+
                     <motion.ul
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1 }}
-                        className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                        className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
+                    >
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
                             <motion.li
                                 whileHover={{ scale: 1.05 }}
-                                className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
-                            hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
-                            dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={index}>
+                                key={index}
+                                className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+                                    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
+                            >
                                 <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                                <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                                <p className='text-gray-600 text-sm dark:text-white'>{description}</p>
+                                <h3 className='my-4 font-sans font-semibold text-gray-700 dark:text-white'>{title}</h3>
+                                <p className='font-sans text-gray-600 text-sm dark:text-white'>{description}</p>
                             </motion.li>
                         ))}
                     </motion.ul>
-
-
                 </motion.div>
             </motion.div>
-            {/* Development Tools Section - Fixed Center Layout */}
+
+            {/* ══════════════════════════════════════════
+                TOOLS I WORK WITH
+            ══════════════════════════════════════════ */}
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className='mt-16 mb-12'>
-
-                {/* Section Header */}
-                <div className='text-center mb-12'>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6 }}
-                        className='inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-50 to-indigo-50 
-                     dark:from-blue-900/20 dark:to-indigo-900/20 rounded-full border border-blue-200 
-                     dark:border-blue-800 mb-4'>
-                        <div className='w-2 h-2 bg-blue-500 rounded-full animate-pulse'></div>
-                        <span className='text-blue-700 dark:text-blue-300 font-medium text-sm tracking-wide'>
-                            DEVELOPMENT TOOLS
-                        </span>
-                    </motion.div>
-                    <motion.h3
-                        initial={{ opacity: 0, y: 20 }}
+                className='mt-16 mb-20'
+            >
+                {/* Header */}
+                <div className='text-center mb-10'>
+                    <motion.h2
+                        initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white font-Ovo'>
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="text-4xl sm:text-5xl font-bold text-[#0f172a] dark:text-white mb-3"
+                    >
                         Tools I Work With
-                    </motion.h3>
+                    </motion.h2>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className='text-gray-600 dark:text-gray-300 mt-3 max-w-md mx-auto'>
-                        Professional development tools that power my workflow
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className='font-sans font-normal text-sm text-[#64748b] dark:text-[#94a3b8]'
+                    >
+                        Professional development tools that power my workflow.
                     </motion.p>
                 </div>
 
-                {/* Tools Grid - Fixed for Center Alignment */}
-                <div className='flex justify-center'>
-                    <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl'>
+                {/* Cards grid */}
+                <div>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto'>
                         {toolsData.map((tool, index) => {
-                            const toolNames = ['VS Code', 'IntelliJ', 'Postman', 'Git'];
+                            const toolMeta = [
+                                { name: 'VS Code', desc: 'Lightweight, powerful editor for modern web development with rich extension support.', stars: 5 },
+                                { name: 'IntelliJ', desc: 'Smart Java IDE with advanced refactoring, debugging, and Spring Boot integration.', stars: 4 },
+                                { name: 'Postman', desc: 'Test and document REST APIs quickly with an intuitive request-building interface.', stars: 5 },
+                                { name: 'Git', desc: 'Track changes, collaborate, and manage code history across every project.', stars: 5 },
+                            ];
+                            const meta = toolMeta[index] ?? { name: `Tool ${index + 1}`, desc: '', stars: 3 };
+
                             return (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                                    whileHover={{
-                                        y: -8,
-                                        transition: { duration: 0.3, type: "spring", stiffness: 300 }
-                                    }}
-                                    className='group'>
-                                    <div className='relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg 
-                                      hover:shadow-2xl border border-gray-100 dark:border-gray-700
-                                      transition-all duration-300 group-hover:border-blue-300 
-                                      dark:group-hover:border-blue-600 overflow-hidden'>
+                                    transition={{ duration: 0.5, delay: 0.1 * index }}
+                                    whileHover={{ y: -4, transition: { duration: 0.25, type: 'spring', stiffness: 300 } }}
+                                    className='bg-white dark:bg-[#1e293b] rounded-2xl p-6 border border-[#e2e8f0] dark:border-[#334155]
+                                               hover:shadow-lg transition-shadow duration-300 flex flex-col gap-3'
+                                >
+                                    {/* Icon */}
+                                    <div className='w-12 h-12 flex items-center justify-center'>
+                                        <Image src={tool} alt={meta.name} className='w-10 h-10 object-contain' />
+                                    </div>
 
-                                        {/* Background gradient effect */}
-                                        <div className='absolute inset-0 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 
-                                          dark:from-blue-900/10 dark:to-indigo-900/10 opacity-0 
-                                          group-hover:opacity-100 transition-opacity duration-300'></div>
+                                    {/* Name */}
+                                    <h3 className='font-sans font-bold text-[#0f172a] dark:text-white text-base'>
+                                        {meta.name}
+                                    </h3>
 
-                                        {/* Tool Icon */}
-                                        <div className='relative flex items-center justify-center w-16 h-16 mx-auto mb-3'>
-                                            <div className='absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-100 
-                                              dark:from-blue-900/30 dark:to-indigo-900/30 rounded-xl opacity-0 
-                                              group-hover:opacity-100 transition-opacity duration-300'></div>
-                                            <Image src={tool} alt='Development Tool' className='w-12 h-12 object-contain relative z-10' />
-                                        </div>
+                                    {/* Description */}
+                                    <p className='font-sans text-[#64748b] dark:text-[#94a3b8] text-sm leading-relaxed flex-1'>
+                                        {meta.desc}
+                                    </p>
 
-                                        {/* Tool Name */}
-                                        <div className='text-center'>
-                                            <span className='text-sm font-medium text-gray-700 dark:text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                                {toolNames[index]}
-                                            </span>
-                                        </div>
+                                    {/* Stars */}
+                                    <div className='flex gap-1 mt-1'>
+                                        {[...Array(5)].map((_, i) => (
+                                            <svg key={i} width="16" height="16" viewBox="0 0 24 24"
+                                                fill={i < meta.stars ? '#eab308' : '#e2e8f0'}
+                                                className="dark:[&>path]:fill-current"
+                                            >
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                            </svg>
+                                        ))}
                                     </div>
                                 </motion.div>
                             );
@@ -157,87 +171,76 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
                 </div>
             </motion.div>
 
-            {/* Technology Stack Section - Professional Design */}
+            {/* ══════════════════════════════════════════
+                TECHNICAL EXPERTISE
+            ══════════════════════════════════════════ */}
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className='mb-16'>
-
-                {/* Section Header */}
-                <div className='text-center mb-12'>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6 }}
-                        className='inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-50 to-teal-50 
-                                 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-full border border-emerald-200 
-                                 dark:border-emerald-800 mb-4'>
-                        <div className='w-2 h-2 bg-emerald-500 rounded-full animate-pulse'></div>
-                        <span className='text-emerald-700 dark:text-emerald-300 font-medium text-sm tracking-wide'>
-                            TECHNOLOGY STACK
-                        </span>
-                    </motion.div>
-                    <motion.h3
-                        initial={{ opacity: 0, y: 20 }}
+                className='mb-16'
+            >
+                {/* Header */}
+                <div className='text-center mb-10'>
+                    <motion.h2
+                        initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white font-Ovo'>
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="text-4xl sm:text-5xl font-bold text-[#0f172a] dark:text-white mb-3"
+                    >
                         Technical Expertise
-                    </motion.h3>
+                    </motion.h2>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className='text-gray-600 dark:text-gray-300 mt-3 max-w-md mx-auto'>
-                        Technologies and frameworks I&apos;m proficient in
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className='font-sans font-normal text-sm text-[#64748b] dark:text-[#94a3b8]'
+                    >
+                        Key skills that define my professional identity.
                     </motion.p>
                 </div>
 
-                {/* Tech Stack Grid */}
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-4xl mx-auto'>
-                    {techData.map((tech, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.8 + index * 0.08 }}
-                            whileHover={{
-                                y: -8,
-                                transition: { duration: 0.3, type: "spring", stiffness: 300 }
-                            }}
-                            className='group'>
-                            <div className='relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg 
-                                          hover:shadow-2xl border border-gray-100 dark:border-gray-700
-                                          transition-all duration-300 group-hover:border-emerald-300 
-                                          dark:group-hover:border-emerald-600 overflow-hidden'>
-                                {/* Background gradient effect */}
-                                <div className='absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 
-                                              dark:from-emerald-900/10 dark:to-teal-900/10 opacity-0 
-                                              group-hover:opacity-100 transition-opacity duration-300'></div>
-                                {/* Tech Icon */}
-                                <div className='relative flex items-center justify-center w-16 h-16 mx-auto mb-3'>
-                                    <div className='absolute inset-0 bg-gradient-to-br from-emerald-100 to-teal-100 
-                                                  dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl opacity-0 
-                                                  group-hover:opacity-100 transition-opacity duration-300'></div>
-                                    <Image src={tech.icon} alt={tech.name} className='w-12 h-12 object-contain relative z-10' />
+                {/* Cards grid */}
+                <div>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto'>
+                        {techData.map((tech, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.08 * index }}
+                                whileHover={{ y: -4, transition: { duration: 0.25, type: 'spring', stiffness: 300 } }}
+                                className='bg-white dark:bg-[#1e293b] rounded-2xl p-6 border border-[#e2e8f0] dark:border-[#334155]
+                                           hover:shadow-lg transition-shadow duration-300 flex flex-col gap-3'
+                            >
+                                {/* Icon */}
+                                <div className='w-12 h-12 flex items-center justify-center'>
+                                    <Image src={tech.icon} alt={tech.name} className='w-10 h-10 object-contain' />
                                 </div>
-                                {/* Tech Name Placeholder */}
-                                <div className='text-center'>
-                                    <div className='w-20 h-2 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto opacity-60'></div>
-                                </div>
-                                {/* Skill Level Indicator */}
-                                <div className='flex gap-1 justify-center mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+
+                                {/* Name */}
+                                <h3 className='font-sans font-bold text-[#0f172a] dark:text-white text-base'>
+                                    {tech.name}
+                                </h3>
+
+                                {/* Description */}
+                                <p className='font-sans text-[#64748b] dark:text-[#94a3b8] text-sm leading-relaxed flex-1'>
+                                    {tech.description}
+                                </p>
+
+                                {/* Stars */}
+                                <div className='flex gap-1 mt-1'>
                                     {[...Array(5)].map((_, i) => (
-                                        <div key={i} className={`w-1.5 h-1.5 rounded-full ${i < tech.level
-                                            ? 'bg-emerald-400'
-                                            : 'bg-gray-300 dark:bg-gray-600'
-                                            }`}></div>
+                                        <svg key={i} width="16" height="16" viewBox="0 0 24 24"
+                                            fill={i < tech.level ? '#eab308' : '#e2e8f0'}
+                                        >
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                        </svg>
                                     ))}
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </motion.div>
         </motion.div>

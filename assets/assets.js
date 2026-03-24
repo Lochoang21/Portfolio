@@ -26,7 +26,6 @@ import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import backendicon from './backend-icon.png';
@@ -92,7 +91,6 @@ export const assets = {
     profile_img,
     download_icon,
     hand_icon,
-    header_bg_color,
     moon_icon,
     sun_icon,
     arrow_icon,
@@ -174,10 +172,10 @@ export const toolsData = [
 ];
 
 export const techData = [
-    { icon: assets.javaspring, level: 5, name: "Java Spring Boot" },
-    { icon: assets.mysql, level: 4, name: "MySQL" },
-    { icon: assets.react, level: 4, name: "React" },
-    { icon: assets.nextjs, level: 4, name: "Next.js" },
-    { icon: assets.bootstrap, level: 4, name: "Bootstrap" },
-    { icon: assets.github, level: 4, name: "GitHub" }
+    { icon: assets.javaspring, level: 5, name: "Java Spring Boot", description: "Experienced in building robust and scalable backend applications using Java Spring Boot, with a strong focus on RESTful API development, security, and database integration." },
+    { icon: assets.mysql, level: 4, name: "MySQL", description: "Proficient in designing, implementing, and optimizing relational databases using MySQL." },
+    { icon: assets.react, level: 4, name: "React", description: "Skilled in building dynamic and responsive user interfaces using React and its ecosystem." },
+    { icon: assets.nextjs, level: 4, name: "Next.js", description: "Experienced in creating server-side rendered and statically generated React applications with Next.js." },
+    { icon: assets.bootstrap, level: 4, name: "Bootstrap", description: "Familiar with building responsive and mobile-first web applications using Bootstrap." },
+    { icon: assets.github, level: 4, name: "GitHub", description: "Experienced in version control and collaborative development using GitHub." }
 ];

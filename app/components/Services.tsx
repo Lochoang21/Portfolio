@@ -1,55 +1,77 @@
 import React from 'react'
 import Image from 'next/image';
-import { assets, serviceData } from '@/assets/assets';
+import { serviceData } from '@/assets/assets';
 import { motion } from "motion/react";
 
 const Services = () => {
   return (
-    <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-    id='services' className='w-full px-[12%] py-10 scroll-mt-20 '>
-      <motion.h4 
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.3 }}
-      className='text-center mb-2 text-lg font-Ovo'>What I offer</motion.h4>
-      <motion.h2
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.5 }}
-      className='text-center mb-2 text-5xl font-Ovo'>My Services</motion.h2>
-      <motion.p 
+    <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1}}
-      transition={{ duration: 0.5, delay: 0.7 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id='services'
+      className='w-full px-[12%] py-16 scroll-mt-20'
+    >
+      {/* Header */}
+      <motion.h4
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className='text-center text-base text-gray-500 dark:text-gray-400 font-Ovo'
+      >
+        What I offer
+      </motion.h4>
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className='text-center text-5xl font-bold dark:text-white mt-1'
+      >
+        My Services
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
+        className='text-center max-w-2xl mx-auto mt-4 mb-14 text-gray-500 dark:text-gray-400 font-Ovo text-base'
+      >
         I am a web developer with experience in backend development.
         I can help you build a website that meets your needs.
-        I can also help you with any other web development needs you may have.
-        I am always eager to learn new things and improve myself.
-        I am also always ready to help others and share my knowledge with them.
       </motion.p>
-      <motion.div 
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1}}
-      transition={{ duration: 0.6, delay: 0.9 }}
-      className='grid grid-cols-auto gap-6 my-10'>
-        {serviceData.map(({ icon, title, description, link }, index) => (
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-          key={index} className='border border-gray-400 rounded-lg px-8 py-12 
-          cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black hover:bg-lightHover
-          dark:hover:bg-darkHover dark:hover:shadow-white'>
-            <Image src={icon} alt='' className='w-10' />
-            <h3 className='text-lg my-4 text-gray-700 dark:text-white'>
-              {title}
-            </h3>
-            <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
-              {description}
-            </p>
-            <a className='flex items-center gap-2 text-sm mt-5' href={link}>Read more <Image src={assets.right_arrow} className='w-4' alt='' /></a>
+
+      {/* 2-column Grid */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+        className='grid grid-cols-1 md:grid-cols-2 gap-5'
+      >
+        {serviceData.map(({ icon, title, description }, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 * index }}
+            whileHover={{ y: -3 }}
+            className='bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700
+                       rounded-2xl px-7 py-7 flex items-start gap-5
+                       shadow-sm hover:shadow-md transition-shadow duration-300'
+          >
+            {/* Icon box */}
+            <div className='w-12 h-12 rounded-xl border border-gray-200 dark:border-gray-700
+                            bg-gray-50 dark:bg-gray-800 flex items-center justify-center flex-shrink-0'>
+              <Image src={icon} alt={title} className='w-6 h-6' />
+            </div>
+
+            {/* Content */}
+            <div className='flex-1 min-w-0'>
+              <h3 className='text-base font-bold text-gray-900 dark:text-white'>
+                {title}
+              </h3>
+              <p className='text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed'>
+                {description}
+              </p>
+            </div>
           </motion.div>
         ))}
       </motion.div>
