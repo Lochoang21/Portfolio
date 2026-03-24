@@ -52,11 +52,16 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import swagger from './swagger.png';
+import profileImage from './profile-img.jpg';
+import postgressql from './Postgresql_elephant.svg';
+import tailwind from './tailwind.png';
+import strapi from './strapi.png';
 
 export const assets = {
     user_image,
     code_icon,
     code_icon_dark,
+    strapi,
     edu_icon,
     edu_icon_dark,
     project_icon,
@@ -66,6 +71,9 @@ export const assets = {
     shacd,
     myImage,
     figma,
+    profileImage,
+    postgressql,
+    tailwind,
     git,
     javaspring,
     backendicon,
@@ -162,7 +170,7 @@ export const serviceData = [
 
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Java, PHP' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, JavaScript, TypeScript, Python, PHP' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Sai Gon University' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 4 projects' }
 ];
@@ -172,10 +180,13 @@ export const toolsData = [
 ];
 
 export const techData = [
-    { icon: assets.javaspring, level: 5, name: "Java Spring Boot", description: "Experienced in building robust and scalable backend applications using Java Spring Boot, with a strong focus on RESTful API development, security, and database integration." },
+    { icon: assets.javaspring, level: 4, name: "Java Spring Boot", description: "Experienced in building robust and scalable backend applications using Java Spring Boot, with a strong focus on RESTful API development, security, and database integration." },
     { icon: assets.mysql, level: 4, name: "MySQL", description: "Proficient in designing, implementing, and optimizing relational databases using MySQL." },
+    { icon: assets.docker, level: 4, name: "Docker", description: "Skilled in containerizing applications and managing containerized environments using Docker." },
+    { icon: assets.postgressql, level: 4, name: "PostgreSQL", description: "Proficient in designing, implementing, and optimizing relational databases using PostgreSQL." },
+    { icon: assets.tailwind, level: 4, name: "Tailwind CSS", description: "Skilled in creating responsive and customizable user interfaces using Tailwind CSS." },
     { icon: assets.react, level: 4, name: "React", description: "Skilled in building dynamic and responsive user interfaces using React and its ecosystem." },
     { icon: assets.nextjs, level: 4, name: "Next.js", description: "Experienced in creating server-side rendered and statically generated React applications with Next.js." },
-    { icon: assets.bootstrap, level: 4, name: "Bootstrap", description: "Familiar with building responsive and mobile-first web applications using Bootstrap." },
+    { icon: assets.strapi, level: 4, name: "Strapi", description: "Familiar with building headless content management systems using Strapi." },
     { icon: assets.github, level: 4, name: "GitHub", description: "Experienced in version control and collaborative development using GitHub." }
 ];

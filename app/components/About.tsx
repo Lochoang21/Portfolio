@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
                     transition={{ duration: 0.6 }}
                     className='w-64 sm:w-80 rounded-3xl max-w-none'
                 >
-                    <Image src={assets.myImage} alt='user' className='w-full rounded-3xl' />
+                    <Image src={assets.myImage} alt='user' className='w-full rounded-xl' />
                 </motion.div>
 
                 <motion.div

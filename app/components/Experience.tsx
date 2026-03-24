@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
 import { motion } from "motion/react";
+import Image from 'next/image';
 
 interface ExperienceItem {
     logo: string;          // URL or imported image for company logo
@@ -17,32 +17,34 @@ interface ExperienceItem {
 // ── Sample data – replace with your real data or import from assets ──
 const experienceData: ExperienceItem[] = [
     {
-        logo: '/company/ubs.png',
+        logo: '/ccvi.png',
         title: 'Frontend Developer',
         company: 'CCVI',
         location: 'Phu Nhuan District, HCM City',
-        period: '2024 - Present',
-        description: 'Shipped production features within the first month for a trader-facing P&L dashboard...',
+        period: '11/2025 - 03/2026',
+        description: 'Designed responsive interfaces with NextJS for Eduhub.vn and built admin dashboard with Strapi CMS. Developed purchasing and inventory systems aligned with complex database structures.',
+
         tags: ['Typescript', 'React', '+3 more'],
         link: 'https://ubs.com',
     },
     {
-        logo: '/company/muze.png',
-        title: 'Web Developer Intern',
+        logo: '/amethyst.jpg',
+        title: 'Web Developer',
         company: 'Amethyst',
         location: 'Binh Thanh District, HCM City',
-        period: '08/2025 - 10/2025',
-        description: 'Contributed to the development of a web application using JavaSpring Boot and ReactJS, enhancing user experience and functionality.',
+        period: '08/2025 - 11/2025',
+        description: 'Developed frontend features for UMIYA website using ReactJS and NextJS. Designed and integrated RESTful APIs with Java Spring Boot backend for seamless data communication.',
+
         tags: ['Java', 'TypeScript', '+4 more'],
         link: 'https://muze.ai',
     },
     {
-        logo: '/company/builtdesign.png',
+        logo: '/internet.png',
         title: 'Freelance Web Developer',
         company: '',
         location: 'Ho Chi Minh City, Vietnam',
         period: '02/2025 - 04/2025',
-        description: 'Developed websites using Next.js, Java Spring Boot, and MySQL.',
+        description: 'A web-based platform for managing online courses, featuring user authentication, role-based access (Admin/Student), course enrollment, and profile management.',
         tags: ['React', 'Java', 'MySQL', '+5 more'],
         link: 'https://builtdesign.in',
     },
@@ -51,7 +53,7 @@ const experienceData: ExperienceItem[] = [
 interface ExperienceProps {
     isDarkMode?: boolean;
 }
- 
+
 const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
     return (
         <motion.div
@@ -78,7 +80,7 @@ const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
             >
                 Professional journey and career timeline.
             </motion.p>
- 
+
             {/* Cards List — single column, horizontal rows */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -102,14 +104,14 @@ const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
                                         bg-gray-50 dark:bg-gray-800 flex items-center justify-center
                                         flex-shrink-0 overflow-hidden'>
                             {exp.logo ? (
-                                <img src={exp.logo} alt={exp.company} className='w-10 h-10 object-contain' />
+                                <Image src={exp.logo} alt={exp.company} width={40} height={40} className='w-10 h-10 object-contain' />
                             ) : (
                                 <svg xmlns='http://www.w3.org/2000/svg' className='w-7 h-7 text-gray-400' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
                                     <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.5} d='M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' />
                                 </svg>
                             )}
                         </div>
- 
+
                         {/* Main content */}
                         <div className='flex-1 min-w-0'>
                             {/* Row 1: Title + Period Badge */}
@@ -123,7 +125,7 @@ const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
                                     {exp.period}
                                 </span>
                             </div>
- 
+
                             {/* Row 2: Company + external link */}
                             <div className='flex items-center gap-1.5 mt-1'>
                                 <span className='text-sm text-gray-600 dark:text-gray-400 font-medium'>
@@ -142,18 +144,18 @@ const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
                                     </a>
                                 )}
                             </div>
- 
+
                             {/* Row 3: Location */}
                             <p className='text-sm text-gray-400 dark:text-gray-500 mt-0.5'>
                                 {exp.location}
                             </p>
- 
+
                             {/* Row 4: Description */}
                             <p className='text-sm text-gray-400 dark:text-gray-500 mt-2 leading-relaxed line-clamp-2'>
                                 {exp.description}
                             </p>
                         </div>
- 
+
                         {/* View Details Button — right side, vertically centered */}
                         <div className='flex-shrink-0'>
                             <button
@@ -175,5 +177,5 @@ const Experience: React.FC<ExperienceProps> = ({ isDarkMode = false }) => {
         </motion.div>
     )
 }
- 
+
 export default Experience
